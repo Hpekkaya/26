@@ -179,7 +179,92 @@
 // car1.hello1("From")
 // Car.hello2()
 
+// class inheritance
+
+// class Person{
+//     constructor(name, age) {
+//         this.name=name;
+//         this.age =age;
+//     }
+//     showInfos(){
+//         console.log(`"Name :", ${this.name}, " Age :", ${this.age} `)
+//     }
+// }
+
+// class Employee extends Person{
+//     constructor(name, age, salary){
+//         super(name,age) // Since it inherit from Person
+//         this.salary=salary;
+//     }
+//     // Override on showInfos() in  class Person
+//     showInfos(){
+//         console.log(`"Name :", ${this.name}, " Age :", ${this.age}, "Salary :", ${this.salary} `)
+//     }
+// }
+
+// const emp = new Employee("Mustafa", 23, 2500)
+// console.log(emp)
+
+// emp.showInfos()
 
 
+// callback
 
+// function display(message) {
+//     console.log("Display :", message)
+// }
+
+// function first() {
+//     display("Hello Display")
+// }
+// function second() {
+//     display("Good By Display")
+// }
+// first()
+// second()
+
+// function display(some){
+//     console.log(some)
+// }
+// function calc(num1, num2){
+//     let sum = num1+num2
+//     display(sum)
+// }
+// calc(5,7)
+
+
+// function display(some){
+//     console.log(some)
+// }
+// function calc(num1, num2, myCallback = ()=>{}){
+//     let sum = num1+num2
+//     myCallback(sum)
+//     return sum
+// }
+// calc(9,8,display)
+
+// let val;
+
+// function multiplyByTwo(a,b,c, callback) {
+//     let arr =[];
+//     for (let i=0; i<3; i++){
+//         arr[i] = callback(arguments[i]*2);
+//         console.log(i, " ", arguments[i])
+//     }
+//     return arr;
+// }
+
+// // function addOne(a){
+// //     return a+1;
+// // }
+// addOne = (a) => a+5;
+
+
+// val = multiplyByTwo(10,20,30, addOne);
+
+// for (let i=0; i<val.length;i++ ){
+//     val[i]=addOne(val[i]);
+// }
+
+// console.log(val)
 
