@@ -76,5 +76,110 @@
 
 // console.log(hello(" and Turkey"))
 
+// let sayi = 1;
+// let sayi2 = sayi
+// sayi2++;
+// console.log(sayi, '-', sayi2)
+
+// const person = {
+//     firstName: "ahmet",
+//     lastName: "can"
+// }
+// // (array için de geçerlidir)
+// const x = person ;
+// x.firstName = "mehmet"
+// console.log(person)
+// console.log(x)
+
+// Since the array and objects reference type;
+// changes in its efects each other,
+
+// person = {firstName:"mehmet"}
+
+// const person = {
+//     firstName: "ahmet",
+//     lastName: "can"
+// }
+
+// // delete person.firstName; 
+// // delete person.lastName;
+// console.log(person)
+// console.log(Object.values(person))
+// //  values() returns the values as an array
+// console.log(Object.keys(person))
+// //  keys() returns the properties as an array
+// console.log(Object.entries(person))
+// //  entries() returns the properties as an array
+// console.log(Object.entries(person)[1][1])
+// console.log(Object.entries(person)[1])
+
+// functions
+// function myFunction(x,y) {
+//     if (y === undefined) {
+//         y=2;
+//     }
+//     return x+y
+// }
+// console.log(myFunction(5,8))
+
+//  takes value as adefoult if it is not send in function
+// function myFunction(x=3,y=2) {
+//         return x+y
+// }
+// console.log(myFunction(5))
+// console.log(myFunction(5, 8))
+// console.log(myFunction())
+
+// rest parameter
+
+// function total(...args) {
+//     let sum = 0;
+//     for (let arg of args){
+//        sum += arg
+//     }
+//     return sum
+// }
+
+// console.log(total(20, 11));
+
+// self invoke
+
+// function self() {
+//     console.log("Hello")
+// }
+// self()
+
+// self = () => console.log("Hello Turkey")
+
+// self()
+
+// (function self() {
+//     console.log("Hello")
+// })();
+
+
+// (self = () => console.log("Hello Turkey"))()
+
+// class detail, static fuction
+
+// class Car {
+//     constructor(name){
+//         this.name = name
+//     }
+//     hello() { console.log("Hello Turkey")}
+
+//     hello1 = (x) => console.log(x+ " ", "Hello Arrow")
+
+//     static hello2() {console.log("Hello Static")}
+// }
+
+// let car1 = new Car ("Ford")
+// console.log(car1);
+// car1.hello();
+// car1.hello1("From")
+// Car.hello2()
+
+
+
 
 
